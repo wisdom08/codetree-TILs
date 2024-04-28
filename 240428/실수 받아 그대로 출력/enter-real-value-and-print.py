@@ -1,2 +1,2 @@
 n = float(input())
-print(round(n, 2))
+print(f"{n:.2f}")
