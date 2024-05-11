@@ -1,2 +1,3 @@
 input = input()
-print(input.replace("-",""))
+arr = input.split("-")
+print(f"{arr[0]}{arr[1]}")
