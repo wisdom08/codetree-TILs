@@ -1,0 +1,6 @@
+arr = list(map(int, input().split()))
+sum = sum(arr)
+avr = sum // len(arr)
+print(sum)
+print(avr)
+print(sum - avr)
