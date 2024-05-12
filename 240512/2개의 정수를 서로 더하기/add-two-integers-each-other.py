@@ -1,2 +1,9 @@
 arr = list(map(int, input().split()))
-print(f"{arr[0]+arr[1]} {arr[0]+arr[1]+arr[1]}")
+
+a = arr[0]
+b = arr[1]
+
+a += arr[1]
+b += a 
+
+print(a, b)
