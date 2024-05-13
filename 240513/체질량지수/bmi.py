@@ -1,6 +1,8 @@
 i = input()
-a = int(i.split(" ")[0])
-b = int(i.split(" ")[1])
+arr = i.split()
+a = int(arr[0])
+b = int(arr[1])
+
 answer = (10000 * b) // (a * a)
 print(answer)
 
