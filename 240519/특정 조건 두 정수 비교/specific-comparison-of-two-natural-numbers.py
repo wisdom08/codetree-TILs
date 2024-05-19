@@ -5,5 +5,5 @@ b = arr[1]
 
 if a < b:
     print(1, 0)
-else:
+elif a == b:
     print(0, 1)
