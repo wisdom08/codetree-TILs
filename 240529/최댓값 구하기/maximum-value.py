@@ -1,8 +1,15 @@
 arr = list(map(int, input().split()))
+a = arr[0]
+b = arr[1]
+c = arr[2]
 
-if arr[0] >= arr[1] and arr[0] >= arr[2]:
-    print(arr[0])
-elif arr[1] >= arr[0] and arr[1] >= arr[2]:
-    print(arr[1])
+if a >= b:
+    if a >= c:
+        print(a)
+    else:
+        print(c)
 else:
-    print(arr[2])
+    if b >= c:
+        print(b)
+    else:
+        print(c)
