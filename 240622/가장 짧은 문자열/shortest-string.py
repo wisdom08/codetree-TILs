@@ -1,13 +1,12 @@
-arr = [input() for _ in range(3)]
+a = input()
+b = input()
+c = input()
 
-max = len(arr[0])
-min = len(arr[0])
+al = len(a)
+bl = len(b)
+cl = len(c)
 
-for i in range(1, 3):
-    n = len(arr[i])
-    if max < n:
-        max = n
-    elif min > n:
-        min = n
+mx = max([al, bl, cl])
+mi = min([al, bl, cl])
 
-print(max-min)
+print(mx-mi)
