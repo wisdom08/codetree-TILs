@@ -1,3 +1,10 @@
 a = input()
 b = input()
-print(a.replace(" ", "")+b.replace(" ",""))
+
+for i in a:
+    if i != " ":
+        print(i, end="")
+
+for j in b:
+    if j != " ":
+        print(j, end="")
