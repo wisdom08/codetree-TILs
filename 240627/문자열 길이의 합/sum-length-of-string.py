@@ -7,8 +7,8 @@ arr = [input() for _ in range(n)]
 
 for i in arr:
     tl += len(i)
-    if i.find('a') != -1:
-        ac +=1 
+    if i[0] == 'a':
+        ac += 1
 
 
 
