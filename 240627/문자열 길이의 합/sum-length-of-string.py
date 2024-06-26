@@ -7,9 +7,9 @@ arr = [input() for _ in range(n)]
 
 for i in arr:
     tl += len(i)
-    for j in i:
-        if j == 'a':
-            ac += 1
-            break
+    if i.find('a') != -1:
+        ac +=1 
+
+
 
 print(tl, ac)
