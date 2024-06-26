@@ -10,5 +10,6 @@ for i in arr:
     for j in i:
         if j == 'a':
             ac += 1
+            break
 
 print(tl, ac)
