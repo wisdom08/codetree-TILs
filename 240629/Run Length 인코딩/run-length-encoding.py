@@ -1,24 +1,22 @@
 s = input()
 
-res = []
-count = 1
+encoded = ""
 
-if len(s) == 1:
-    print(count + 1)
-    print(s + str(count))
-else:
-    for i in range(0, len(s) - 1):
-        if s[i] == s[i + 1]:
-            count += 1
-        else:
-            res.append(s[i])
-            res.append(str(count))
-            count = 1
+cur_char = s[0]
+num_char = 1
 
-        if i == len(s) - 2:
-            res.append(s[i + 1])
-            res.append(str(count))
+for target in s[1:]:
+    if target == cur_char:
+        num_char += 1
+    else:
+        encoded += cur_char
+        encoded += str(num_char)
 
-    result = ''.join(res)
-    print(len(result))
-    print(result)
+        cur_char = target
+        num_char = 1
+
+encoded += cur_char
+encoded += str(num_char)
+
+print(len(encoded))
+print(encoded)
