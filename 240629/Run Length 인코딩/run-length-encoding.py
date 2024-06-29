@@ -4,6 +4,7 @@ res = []
 count = 1
 
 if len(s) == 1:
+    print(count+1)
     print(s+str(count))
 else:
     for i in range(0, len(s)-1):
