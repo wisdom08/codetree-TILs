@@ -11,7 +11,7 @@ for i in range(0, len(s)-1):
         count = 1
     
     if i == len(s)-2:
-        res.append(s[i])
+        res.append(s[i+1])
         res.append(str(count))
     
 
